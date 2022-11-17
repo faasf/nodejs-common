@@ -1,5 +1,5 @@
 {
-  "name": "@faas/nodejs-common",
+  "name": "@faasf/nodejs-common",
   "version": "0.1.0",
   "description": "Nodejs common",
   "main": "./build/cjs/index.js",
