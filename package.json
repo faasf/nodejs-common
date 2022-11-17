@@ -35,5 +35,14 @@
   },
   "dependencies": {
     "@dapr/dapr": "^2.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faasf/nodejs-common.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/faasf/nodejs-common/issues"
+  },
+  "homepage": "https://github.com/faasf/nodejs-common#readme"
 }
