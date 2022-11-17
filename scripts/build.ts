@@ -3,25 +3,18 @@ import { build as esbuild, BuildOptions } from "esbuild";
 
 const baseConfig: BuildOptions = {
   platform: "node",
-  target: "esnext",
+  target: "es6",
   format: "cjs",
   nodePaths: [path.join(__dirname, "../src")],
-  sourcemap: true,
+  sourcemap: false,
   external: [],
-  bundle: true,
+  bundle: false,
 };
 
 async function main() {
   await esbuild({
     ...baseConfig,
-    outdir: path.join(__dirname, "../build/cjs"),
-    entryPoints: [path.join(__dirname, "../src/index.ts")],
-  });
-
-  await esbuild({
-    ...baseConfig,
-    format: "esm",
-    outdir: path.join(__dirname, "../build/esm"),
+    outdir: path.join(__dirname, "../build"),
     entryPoints: [path.join(__dirname, "../src/index.ts")],
   });
 }
