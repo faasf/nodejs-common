@@ -1,18 +1,17 @@
 {
   "name": "@faasff/nodejs-common",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Nodejs common",
   "main": "./build/index.js",
-  "types": "./build/src/index.d.ts",
+  "types": "./build/index.d.ts",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "npm run clean && npm run type:dts && npm run build:main",
-    "build:main": "node -r ./esbuild-hook ./scripts/build",
+    "build": "npm run clean && npm run build:main",
+    "build:main": "npx tsc",
     "clean": "node -r ./esbuild-hook ./scripts/clean",
-    "type:dts": "tsc --emitDeclarationOnly",
     "lint": "eslint src --ext .ts"
   },
   "devDependencies": {

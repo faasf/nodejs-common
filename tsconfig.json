@@ -11,7 +11,7 @@
     ],
     "module": "commonjs",
     "target": "es6",
-    "rootDir": "./",
+    "rootDir": "./src",
     "outDir": "build",
     "strict": true,
     "sourceMap": false,
